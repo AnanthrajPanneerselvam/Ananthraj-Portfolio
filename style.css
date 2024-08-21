@@ -80,7 +80,7 @@ section {
     background-color: #f8f9fa;
 }
 
-#projects {
+#project-experience {
     background-color: #1a5f7a;
     color: #fff;
 }
@@ -93,7 +93,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-#experience h2, #projects h2 {
+#experience h2, #project-experience h2 {
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -103,7 +103,7 @@ h3 {
     margin-top: 20px;
 }
 
-#experience h3, #projects h3 {
+#experience h3, #project-experience h3 {
     color: #ffffff;
 }
 
@@ -141,7 +141,7 @@ ul li:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-#experience ul li, #projects ul li {
+#experience ul li, #project-experience ul li {
     color: #333;
 }
 
@@ -173,6 +173,33 @@ ul li:hover {
     font-size: 0.9em;
 }
 
+#project-experience .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#project-experience .project-header h3 {
+    margin: 0;
+}
+
+#project-experience .client-name {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #57c5b6;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#project-experience h3 {
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+
 footer {
     background: #333;
     color: #fff;
@@ -191,5 +218,12 @@ footer {
     .contact-info {
         flex-direction: column;
         align-items: center;
+    }
+    #project-experience .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #project-experience .client-name {
+        margin-top: 5px;
     }
 }
